@@ -55,6 +55,8 @@ To speed up synchronisation you can also download our blockchain (state 18. 12. 
 On Ubuntu/Debian-based systems:
 
 ```
+$ sudo apt-get update
+$ sudo apt-get upgrade
 $ sudo apt-get install \
       build-essential pkg-config libc6-dev m4 g++-multilib \
       autoconf libtool ncurses-dev unzip git python python-zmq \
