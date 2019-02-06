@@ -19,13 +19,13 @@ Benchmarking: https://github.com/zelcash/zelcash/wiki/Benchmarking-Synopsis-Beta
 Setup guide using Daemon: https://github.com/zelcash/zelcash/wiki/ZelNode-Setup-Guide-%7C-Daemon 
 
 Precompiled binaries
-Mac:
+Mac: \
 https://zelcore.io/downloads/nodes/testnetv6/zelcashd-mac \
-https://zelcore.io/downloads/nodes/testnetv6/zelcash-cli-mac
-Linux:
+https://zelcore.io/downloads/nodes/testnetv6/zelcash-cli-mac \
+Linux: \
 https://zelcore.io/downloads/nodes/testnetv6/zelcashd \
-https://zelcore.io/downloads/nodes/testnetv6/zelcash-cli
-Windows:
+https://zelcore.io/downloads/nodes/testnetv6/zelcash-cli \
+Windows: \
 https://zelcore.io/downloads/nodes/testnetv6/zelcashd.exe \
 https://zelcore.io/downloads/nodes/testnetv6/zelcash-cli.exe
 
