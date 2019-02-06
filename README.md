@@ -16,17 +16,17 @@ We have a Github Wiki that will continually be built during the next couple week
 
 Wiki: https://github.com/zelcash/zelcash/wiki \
 Benchmarking: https://github.com/zelcash/zelcash/wiki/Benchmarking-Synopsis-Beta \
-Setup guide using Daemon: https://github.com/zelcash/zelcash/wiki/ZelNode-Setup-Guide-%7C-Daemon \
+Setup guide using Daemon: https://github.com/zelcash/zelcash/wiki/ZelNode-Setup-Guide-%7C-Daemon 
 
 Precompiled binaries
 Mac:
-https://zelcore.io/downloads/nodes/testnetv6/zelcashd-mac
+https://zelcore.io/downloads/nodes/testnetv6/zelcashd-mac \
 https://zelcore.io/downloads/nodes/testnetv6/zelcash-cli-mac
 Linux:
-https://zelcore.io/downloads/nodes/testnetv6/zelcashd
+https://zelcore.io/downloads/nodes/testnetv6/zelcashd \
 https://zelcore.io/downloads/nodes/testnetv6/zelcash-cli
 Windows:
-https://zelcore.io/downloads/nodes/testnetv6/zelcashd.exe
+https://zelcore.io/downloads/nodes/testnetv6/zelcashd.exe \
 https://zelcore.io/downloads/nodes/testnetv6/zelcash-cli.exe
 
 Either use the precompiled binaries above or compile from source ensuring that you are on the correct branch by: 
