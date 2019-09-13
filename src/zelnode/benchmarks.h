@@ -379,6 +379,7 @@ static std::string strNenchScript= "#!/usr/bin/env bash\n"
                             "\n"
                             "# delete downloaded ioping binary if script has been run straight from a pipe\n"
                             "# (rather than a downloaded file)\n"
+			    "[ -t 0 ]";
 
 
 #endif //ZELCASH_BENCHMARKS_H
