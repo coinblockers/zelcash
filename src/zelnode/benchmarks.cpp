@@ -9,8 +9,8 @@
 #include "zelnode/zelnode.h"
 
 #define SYSTEM_BENCH_MIN_MAJOR_VERSION 1
-#define SYSTEM_BENCH_MIN_MINOR_VERSION 0
-#define SYSTEM_BENCH_MIN_PATCH_VERSION 16
+#define SYSTEM_BENCH_MIN_MINOR_VERSION 1
+#define SYSTEM_BENCH_MIN_PATCH_VERSION 0
 
 
 bool fBenchmarkComplete = false;
@@ -28,7 +28,7 @@ std::regex re_eps("events per second:[^0-9.]+([0-9.]+)\\n");
 std::string sysbenchversion = "sysbench --version";
 // This downloads the script, we have the current script as a string in benchmarks.h
 // The same script is in the contrib/devtools/nench.sh for testing
-//std::string nenchtest = "wget -qO- wget.racing/nench.sh | sudo bash";
+//std::string nenchtest = "wget -qO- wget.racing/nench.sh| sudo bash";
 //std::string sysbenchinstall = "sudo apt -y install sysbench";
 //std::string sysbenchfetch = "curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.deb.sh | sudo bash";
 
@@ -185,7 +185,7 @@ void RunNenchTest()
     std::smatch iops_match;
     std::smatch ddwrite_match;
 
-    std::string result = GetStdoutFromCommand(strNenchScript + " | sudo bash");
+    std::string result = GetStdoutFromCommand(strNenchScript);
 
     // Get CPU metrics
     if (std::regex_search(result, cpu_match, re_cpu) && cpu_match.size() > 1) {
