@@ -145,12 +145,13 @@ fi
 # Basic info
 if [ "$(uname)" = "Linux" ]
 then
+    cpu_info="lscpu"
     printf 'Processor:    '
-    awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo | sed 's/^[ \t]*//;s/[ \t]*$//'
+    "$cpu_info" | sed -ne 's/^Model name: *//p'
     printf 'CPU cores:    '
-    awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo
+    "$cpu_info" | sed -ne 's/^CPU(s): *//p'
     printf 'Frequency:    '
-    awk -F: ' /cpu MHz/ {freq=$2} END {print freq " MHz"}' /proc/cpuinfo | sed 's/^[ \t]*//;s/[ \t]*$//'
+    "$cpu_info" | sed -ne 's/^CPU max MHz: *//p' -ne 's/^CPU MHz: *//p' | tail -n1
     printf 'RAM:          '
     free -h | awk 'NR==2 {print $2}'
     if [ "$(swapon -s | wc -l)" -lt 2 ]
