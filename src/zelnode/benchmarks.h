@@ -219,13 +219,13 @@ static std::string strNenchScript= "#!/usr/bin/env bash\n"
                             "    printf 'Frequency:    '\n"
 			    "    \"$cpu_info\" | lscpu | sed -ne 's/^CPU max MHz: *//p' -ne 's/^CPU MHz: *//p' | tail -n1\n"
                             "    printf 'RAM:          '\n"
-                            "    free -h | awk 'NR==2 {print $2}'\n"
+                            "    free -h --si | awk 'NR==2 {print $2}'\n"
                             "    if [ \"$(swapon -s | wc -l)\" -lt 2 ]\n"
                             "    then\n"
                             "        printf 'Swap:         -\\n'\n"
                             "    else\n"
                             "        printf 'Swap:         '\n"
-                            "        free -h | awk '/Swap/ {printf $2}'\n"
+                            "        free -h --si | awk '/Swap/ {printf $2}'\n"
                             "        printf '\\n'\n"
                             "    fi\n"
                             "else\n"
@@ -379,7 +379,6 @@ static std::string strNenchScript= "#!/usr/bin/env bash\n"
                             "\n"
                             "# delete downloaded ioping binary if script has been run straight from a pipe\n"
                             "# (rather than a downloaded file)\n"
-                            "[ -t 0 ]";
 
 
 #endif //ZELCASH_BENCHMARKS_H

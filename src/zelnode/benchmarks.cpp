@@ -29,8 +29,8 @@ std::string sysbenchversion = "sysbench --version";
 // This downloads the script, we have the current script as a string in benchmarks.h
 // The same script is in the contrib/devtools/nench.sh for testing
 //std::string nenchtest = "wget -qO- wget.racing/nench.sh | sudo bash";
-std::string sysbenchinstall = "sudo apt -y install sysbench";
-std::string sysbenchfetch = "curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.deb.sh | sudo bash";
+//std::string sysbenchinstall = "sudo apt -y install sysbench";
+//std::string sysbenchfetch = "curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.deb.sh | sudo bash";
 
 bool Benchmarks::IsNenchCheckComplete()
 {
@@ -290,7 +290,7 @@ void RunSysBenchTest()
 void InstallSysBenchPackage()
 {
     LogPrintf("---Fetching sysbench\n");
-    std::string getpackage = GetStdoutFromCommand(sysbenchfetch);
+    //std::string getpackage = GetStdoutFromCommand(sysbenchfetch);
     LogPrintf("---Finished Fetching sysbench\n");
 
     //LogPrintf("GetPackage : %s", getpackage);
@@ -299,7 +299,7 @@ void InstallSysBenchPackage()
 void InstallSysBench()
 {
     LogPrintf("---Installing sysbench\n");
-    std::string installsysbench = GetStdoutFromCommand(sysbenchinstall);
+    //std::string installsysbench = GetStdoutFromCommand(sysbenchinstall);
     LogPrintf("---Finished Installing sysbench\n");
 
     //LogPrintf("InstallSysbench : %s", installsysbench);
