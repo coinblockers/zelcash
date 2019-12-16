@@ -296,7 +296,7 @@
 #define PACKAGE_NAME "Zelcash"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Zelcash 3.3.0"
+#define PACKAGE_STRING "Zelcash 3.3.3"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "zelcash"
